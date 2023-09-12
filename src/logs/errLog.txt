@@ -1,0 +1,9 @@
+20230907	11:09:31	99e7869b-3f67-4598-944c-83a93900d9f2	Error: ENOENT: no such file or directory, stat 'C:\Users\DELL\OneDrive\Desktop\station\lessons\auth\node-backend\src\view\404.html'
+20230907	11:09:43	8566d521-1256-4db6-90f2-6aabc83919b8	Error: ENOENT: no such file or directory, stat 'C:\Users\DELL\OneDrive\Desktop\station\lessons\auth\node-backend\src\view\404.html'
+20230907	11:09:18	cbebf9f0-c08b-407c-b857-3a756ccc5c0c	Error: ENOENT: no such file or directory, stat 'C:\Users\DELL\OneDrive\Desktop\station\lessons\auth\node-backend\src\view\404.html'
+20230907	11:09:45	8a7a3beb-58c9-433d-bc78-e8eb6750f20a	Error: ENOENT: no such file or directory, stat 'C:\Users\DELL\OneDrive\Desktop\station\lessons\auth\node-backend\src\view\404.html'
+20230907	11:09:56	76655150-2502-4bf0-84df-575df471851c	Error: ENOENT: no such file or directory, stat 'C:\Users\DELL\OneDrive\Desktop\station\lessons\auth\node-backend\src\view\404.html'
+20230909	16:09:56	4b3729bd-57df-4c0b-b9a5-7d95c987c076	TypeError: roles.map is not a function
+20230909	16:09:14	12ee2ad6-d645-4dd9-8653-f8ef332539d5	Error: Cannot set headers after they are sent to the client
+20230912	10:09:57	06bc1ba2-e9e6-4313-ab79-a08df87abddd	ReferenceError: refreshToken is not defined
+20230912	10:09:07	95b83b4a-a005-4c29-81a9-b2249fc4d018	ReferenceError: refreshToken is not defined
