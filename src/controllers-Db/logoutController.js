@@ -1,19 +1,22 @@
 const User = require("../models/User");
+const asyncHandler = require('express-async-handler')
 
-const handleLogout = async (req, res) => {
+
+
+const handleLogout = asyncHandler(async (req, res) => {
   const cookies = req.cookies;
 
   if (!cookies?.jwt) return res.sendStatus(403);
 
   const refreshToken = cookies.jwt;
 
-  const foundUser = User.findOne({ refreshToken }).exec();
+  const foundUser = await User.findOne({ refreshToken }).exec();
   if (!foundUser) {
     res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true });
     res.sendStatus(204);
   }
-
-  foundUser.refreshToken = foundUser.refreshToken.filter(
+  console.log(foundUser.refreshToken)
+  foundUser.refreshToken = (foundUser.refreshToken).filter(
     (rt) => rt !== refreshToken
   );
   const result = await foundUser.save();
@@ -21,6 +24,6 @@ const handleLogout = async (req, res) => {
 
   res.clearCookie("jwt", { httpOnly: true, sameSite: "None", secure: true });
   res.sendStatus(204);
-};
+});
 
 module.exports = { handleLogout };

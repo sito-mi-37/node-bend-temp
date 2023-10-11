@@ -1,7 +1,9 @@
 const jwt = require("jsonwebtoken");
 const User = require("../models/User");
+const asyncHandler = require('express-async-handler')
 
-const handleRefreshToken = async (req, res) => {
+
+const handleRefreshToken = asyncHandler( async (req, res) => {
   const cookies = req.cookies;
 
   // verify if all fields were provided
@@ -53,13 +55,13 @@ const handleRefreshToken = async (req, res) => {
       }
 
       // refresh token still valid
-      const username = decoded.username;
+      
       const roles = Object.values(foundUser.roles);
 
       const accessToken = jwt.sign(
         {
           UserInfo: {
-            username: foundUser.username,
+            username: decoded.username,
             roles: roles,
           },
         },
@@ -85,9 +87,9 @@ const handleRefreshToken = async (req, res) => {
         secure: true,
         maxAge: 1000 * 60 * 60 * 24,
       });
-      res.json({ accessToken });
+      res.json( accessToken );
     }
   );
-};
+});
 
 module.exports = { handleRefreshToken };

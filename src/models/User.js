@@ -10,7 +10,7 @@ const userSchema = new mongoose.Schema({
     roles: {
         User: {
             type: Number,
-            default: 2001
+            default: 1970
         },
         Editor: Number,
         Admin: Number
@@ -19,7 +19,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    refreshToken: [String]
+    refreshToken: []
 })
 
 module.exports = mongoose.model('User', userSchema)

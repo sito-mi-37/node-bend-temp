@@ -1,8 +1,8 @@
 const User = require('../models/User')
 const bcrypt = require('bcrypt')
+const asyncHandler = require('express-async-handler')
 
-
-const handleRegister = async (req, res) => {
+const handleRegister = asyncHandler( async (req, res) => {
     const {username, password} = req.body
 
     if(!username || !password) return res.status(400).json({message: "Username and password are required"})
@@ -24,6 +24,6 @@ const handleRegister = async (req, res) => {
         res.status(500).json({message: err.message})
     }
 
-}
+})
 
 module.exports = {handleRegister}

@@ -3,6 +3,8 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const asyncHandler = require("express-async-handler");
 
+
+
 //@desc login user
 //@route POST /auth
 //@access public
@@ -45,7 +47,7 @@ const login = asyncHandler(async (req, res) => {
       
       
 
-    const newRefreshTokenArray = !cookies?.jwt
+    let newRefreshTokenArray = !cookies?.jwt
       ? foundUser.refreshToken
       : foundUser.refreshToken.filter((rt) => rt !== cookies.jwt);
 

@@ -12,7 +12,7 @@ const errorHandler = require('./src/middlewares/errorHandler')
 const credentials = require('./src/middlewares/credentials')
 
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3600
 
 
 app.use(logger)
@@ -30,11 +30,13 @@ app.use('/auth', require('./src/routes/authRoute'))
 app.use('/refresh', require('./src/routes/refreshRoute'))
 app.use('/logout', require('./src/routes/logoutRoute'))
 app.use('/register', require('./src/routes/registerRoute'))
-app.use('/employees', require('./src/routes/employeeRoute'))
+app.use('/projects', require('./src/routes/projectRoute')) 
+app.use('/skills', require('./src/routes/skillRoute'))
+app.use('/contact', require('./src/routes/contactRoute'))
 
 app.all('*', (req, res) => {
     if(req.accepts('html')){
-        res.sendFile(path.join(__dirname, 'src', 'view', '404.html'))
+        res.sendFile(path.join(__dirname, 'src', 'views', '404.html'))
     }
 })
 

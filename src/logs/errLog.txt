@@ -7,3 +7,25 @@
 20230909	16:09:14	12ee2ad6-d645-4dd9-8653-f8ef332539d5	Error: Cannot set headers after they are sent to the client
 20230912	10:09:57	06bc1ba2-e9e6-4313-ab79-a08df87abddd	ReferenceError: refreshToken is not defined
 20230912	10:09:07	95b83b4a-a005-4c29-81a9-b2249fc4d018	ReferenceError: refreshToken is not defined
+20231004	01:10:52	2d6cd083-1a64-441c-9fd8-e077c43ebc20	SyntaxError: Unexpected string in JSON at position 39
+20231004	01:10:07	5603c831-27a2-4f6c-a83a-73baf372f227	SyntaxError: Unexpected string in JSON at position 39
+20231004	01:10:43	4b0940e2-11c0-4896-92a4-ecc142828f5e	Error: ENOENT: no such file or directory, stat 'C:\Users\DELL\OneDrive\Desktop\station\portfolio\node-bend-temp\src\view\404.html'
+20231004	13:10:57	e5ad6677-5a99-4080-a3f8-33cdb32737b7	Error: secretOrPrivateKey must have a value
+20231006	12:10:43	5ee86781-6806-4632-ba13-2b6d98bc101d	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-rrncwv5-shard-00-01.yhxnyhd.mongodb.net
+20231007	01:10:29	68bb8540-7046-4d36-9939-ccc0366b5d21	TypeError: Assignment to constant variable.
+20231007	01:10:13	903bc6e2-b952-4b88-ac6d-e6296ac8786e	TypeError: Assignment to constant variable.
+20231007	01:10:19	03fa812b-feda-4685-980a-5814f2ec157f	TypeError: Assignment to constant variable.
+20231007	17:10:39	6e993169-8a9e-40c3-91f7-9ebf8c0c96b7	TypeError: newRefreshTokenArray is not iterable
+20231007	17:10:55	75df9ffb-0185-4b3b-b3f8-20131d86bb66	TypeError: newRefreshTokenArray is not iterable
+20231010	13:10:08	fec7ff5e-3f2b-4148-9c20-4c9e381206ce	CastError: Cast to ObjectId failed for value "{ id: '652539ef55c0ec82fc78456a' }" (type Object) at path "_id" for model "Skill"	DELETE	/skills
+20231010	14:10:49	1369590b-c3bc-4843-99bf-0764f205e33e	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-rrncwv5-shard-00-01.yhxnyhd.mongodb.net	GET	/projects
+20231010	14:10:49	b46ef27c-a34b-4bdd-b99a-cd3a9c2653f2	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-rrncwv5-shard-00-01.yhxnyhd.mongodb.net	GET	/skills
+20231010	14:10:49	2f6e8801-26d5-4a4b-a319-fddc4586332f	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-rrncwv5-shard-00-01.yhxnyhd.mongodb.net	GET	/refresh
+20231011	00:10:49	7784e028-82c8-4630-9038-c82b520703ea	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-rrncwv5-shard-00-00.yhxnyhd.mongodb.net	GET	/projects
+20231011	00:10:49	8dc69c71-c734-4736-a8ec-1fac5b0d3316	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-rrncwv5-shard-00-00.yhxnyhd.mongodb.net	GET	/skills
+20231011	00:10:49	efd39c56-867c-41ea-8476-ce1317e02334	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-rrncwv5-shard-00-00.yhxnyhd.mongodb.net	GET	/refresh
+20231011	07:10:35	251ecb4c-ac55-438f-ab19-59469989dd75	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-rrncwv5-shard-00-02.yhxnyhd.mongodb.net	GET	/projects
+20231011	07:10:35	27bfea98-5852-4676-a213-d3c84c3b733a	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-rrncwv5-shard-00-02.yhxnyhd.mongodb.net	GET	/skills
+20231011	07:10:30	c60c9410-dde8-4664-a820-98541844fd25	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-rrncwv5-shard-00-02.yhxnyhd.mongodb.net	GET	/projects
+20231011	07:10:30	56963ba2-9f1f-4e70-be24-8e6feb9377f3	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-rrncwv5-shard-00-02.yhxnyhd.mongodb.net	GET	/skills
+20231011	07:10:27	9479a454-c114-46b1-bb4f-753f3ce6e01a	MongoServerSelectionError: getaddrinfo ENOTFOUND ac-rrncwv5-shard-00-02.yhxnyhd.mongodb.net	GET	/projects

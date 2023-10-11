@@ -4,7 +4,7 @@ const controller = require('../controllers-Db/logoutController')
 
 
 router.route('/')
-    .get(controller.handleLogout)
+    .post(controller.handleLogout)
 
 
 module.exports = router
